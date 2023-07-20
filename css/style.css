@@ -1,0 +1,321 @@
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    }
+/* HEADER Y NAV */
+nav{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    
+}
+nav img {
+    height: 100%;
+    border: none;
+    
+    
+}
+.container-menu{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+.menu {
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin: 10px;
+    margin-left: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu .desplegable {
+    margin-left: auto ;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: none;
+    padding: 7px;
+}
+
+a:visited{
+    color: inherit;
+}
+
+/* Desplegable nav */
+
+.desplegable {
+    position: relative;
+  }
+  
+  .desplegable:hover .desplegados {
+    display: block;
+  }
+  
+  .desplegados {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    background-color: #fcfcfc;
+    padding: 0;
+    border-radius: 5px;
+    z-index: 999  ;
+  }
+  
+  .desplegados li {
+    display: block;
+  }
+  
+  .desplegados li a {
+    display: block;
+    padding: 12px 8px;
+    font-size: 18px;
+    width: 140px;
+    border-radius: 17px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .desplegados li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+/* FIN HEADER Y NAV */
+
+
+/* MAIN */
+/* Hot Sale */
+
+.carrusel img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* Tarjetas */
+.div-productos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.productos{
+  display: flex;
+  flex-direction: row;
+  margin: 75px;
+  flex-wrap: wrap;
+}
+.tarjeta{
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: -1px 3px 31px 3px rgba(0,0,0,0.76);
+-webkit-box-shadow: -1px 3px 31px 3px rgba(0,0,0,0.76);
+-moz-box-shadow: -1px 3px 31px 3px rgba(0,0,0,0.76);
+    
+}
+.imagentarjeta{
+  width: 100%;
+}
+
+
+/* Contacto */
+.contenedor-contacto{
+  background-color: black;
+ 
+}
+.contenedor-contacto .formulario h2{
+  color: white;
+  font-size: 55px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: start;
+  margin: 25px 25px 0px;
+  padding: 25px;
+}
+.formulario{
+  margin: 20px 190px 0px;
+  
+}
+.contactos-inputs{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 1000px;
+  height: 30px;
+  margin: 20px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  
+  
+}
+.contactos-consulta{
+  border-radius: 5px;
+  width: 1000px;
+  margin: 0px 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+}
+.boton-enviar{
+  display: flex;
+  text-align: start;
+  margin: 10px 20px 0px;
+  background-color: #c50f24;
+  font-size: 20px;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  padding: 10px 5px 10px 5px;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  border-color: black;
+  font-family: Poppins;
+}
+
+/* UBICACION */
+.ubicacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  padding-top: 50px;
+  
+  
+}
+.mapa{
+  margin: 0px 150px 100px;
+  
+}
+
+.material-symbols-outlined {
+
+  color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.ubicacion-icono{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: Poppins;
+}
+.footerizq {
+  margin-right: 50px; /* Ajusta el margen derecho para crear un espacio en el medio */
+  text-decoration: none;
+}
+.margenfooterizq{
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.margenfooterder{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  
+}
+.footerder {
+  margin-left: 50px; /* Ajusta el margen izquierdo para crear un espacio en el medio */
+  padding-right: 2px;
+}
+.copyright{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 25px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: Poppins;
+}
+
+
+
+
+
+/* PAGINA REGISTRO */
+.iniciar-registro{
+  display: flex;
+  margin:100px 250px;
+  
+
+}
+
+.tarjeta-inicio{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border-color: rgb(8, 182, 142);
+  border: 15px solid;
+  
+}
+.texto-inicio-sesion{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs-inicio-sesion{
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  border-radius: 5px;
+  border-color: #6f6566;
+  width: 250px;
+  height: 20px;
+}
+
+.boton-sesion{
+  padding: 5px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* PAGINA PREGUNTAS FRECUENTES */
+
+.preguntas-frecuentes{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 30px;
+  margin: 50px;
+}
+.preguntas{
+  margin: 20px;
+}
